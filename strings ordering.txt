@@ -1,0 +1,12 @@
+def mykey(s):
+	return len(s)
+
+def f(L):
+	L.sort(key=mykey)
+	return L
+
+n=int(input())
+Y=[0]*n
+for i in range(0,n):
+    Y[i]=input()
+print(f(Y))
