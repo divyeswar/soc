@@ -5,7 +5,7 @@ def calc_stats(n):
     row=[]
     for col in line.strip().split(','):
       row.append(float(col))
-  data.append(row)
+    data.append(row)
   return np.mean(data),np.median(data)
 mean = calc_stats('data3.csv')
 print(mean)
